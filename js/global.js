@@ -9,7 +9,7 @@ $(document).ready(function(){
       $('body').prepend(navbar);
 
       var url = location.pathname
-      if (url == '/') {
+      if (url == '') {
         $('nav ul li').filter(':first').addClass('active');
       } else {
         $('nav ul li a').each(function(){
