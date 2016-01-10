@@ -8,12 +8,16 @@ $(document).ready(function(){
 
       $('body').prepend(navbar);
 
-      $('nav ul li a').each(function(){
-        var url = location.pathname
-        if ($(this).attr('href') == url.substring(url.lastIndexOf('/')+1)) {
-          $(this).parent().addClass('active');
-        };
-      });
+      var url = location.pathname
+      if (url == '/') {
+        $('nav ul li').filter(':first').addClass('active');
+      } else {
+        $('nav ul li a').each(function(){
+          if ($(this).attr('href') == url.substring(url.lastIndexOf('/')+1)) {
+            $(this).parent().addClass('active');
+          }
+        });
+      };
 
       $('#append').click(function(){
         $($(this).attr('data-append')).toggle();
