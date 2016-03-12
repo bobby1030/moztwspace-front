@@ -1,52 +1,48 @@
-
 /*Utilities*/
 
 .center {
-  width: auto;
-  display: table;
-  margin-left: auto;
-  margin-right: auto;
+    width: auto;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 .section {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 /*Pages Title*/
 
 .title {
-  font-size: 50px;
+    font-size: 50px;
 }
 
 /*Buttons*/
 
 .btn {
-  margin-top: 12px;
-  font-size: 20px;
+    margin-top: 12px;
+    font-size: 20px;
 }
-
 .btn-wide {
-  width:15em;
+    width: 15em;
 }
 
 /*Login Form Styling*/
 
 .login-form {
-  background-color: #edeff1;
+    background-color: #edeff1;
 }
-
 .login-form div {
-  margin-top:10px;
+    margin-top: 10px;
 }
 
 /*Make Status Page's Profile Image Rounded*/
 
 .thumbnail img {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 /*Hide Contents Before AJAX Done Checking ID*/
-#profile-data,
-#register {
-  display: none;
+
+#profile-data, #register {
+    display: none;
 }

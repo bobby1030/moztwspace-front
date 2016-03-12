@@ -2,55 +2,59 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta content="True" name="HandheldFriendly">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <meta name="viewport" content="width=device-width">
-  <title>帳號設定 | 摩茲工寮即時狀態簽到系統</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/flat-ui.min.css">
-  <link rel="stylesheet" href="css/custom.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="True" name="HandheldFriendly">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="viewport" content="width=device-width">
+	<title>帳號設定 | 摩茲工寮即時狀態簽到系統</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/flat-ui.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <h1 class="text-center title">摩茲工寮即時狀態簽到系統 | 帳號設定</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <form class="login-form text-center" action="#">
-          <div class="input-group input-group-lg">
-            <span class="input-group-addon" id="basic-addon1">User ID：</span>
-            <input type="text" class="form-control" placeholder="請填入欲設定的ID" aria-describedby="basic-addon1" required="required">
-          </div>
-          <div id="profile-data">
-            <div class="alert alert-warning" role="alert">以下是您的帳號資料</div>
-            <div class="input-group input-group-lg">
-              <span class="input-group-addon" id="basic-addon1">暱稱：</span>
-              <input type="text" class="form-control" placeholder="將公開顯示（必填）" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group input-group-lg">
-              <span class="input-group-addon" id="basic-addon1">Mozillians 網站ID：</span>
-              <input type="text" class="form-control" placeholder="（選填）" aria-describedby="basic-addon1">
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary btn-wide center">提交</button>
-        </form>
-        <!-- 打開更新修改選單（Demo用） -->
-        <div class="row">
-          <button id="append" class="btn btn-primary center" data-append="#profile-data">打開修改資料選單（Demo用）</button>
-        </div>
-      </div>
-    </div>
-  </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<h1 class="text-center title">摩茲工寮即時狀態簽到系統 | 帳號設定</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<form class="login-form text-center" action="#">
+					<div class="input-group input-group-lg">
+						<span class="input-group-addon" id="basic-addon1">User ID：</span>
+						<input type="text" class="form-control" placeholder="請填入欲設定的ID" aria-describedby="basic-addon1" required="required">
+					</div>
+					<div id="profile-data">
+						<div class="alert alert-warning" role="alert">以下是您的帳號資料</div>
+						<div class="input-group input-group-lg">
+							<span class="input-group-addon" id="basic-addon1">暱稱：</span>
+							<input type="text" class="form-control" placeholder="將公開顯示（必填）" aria-describedby="basic-addon1">
+						</div>
+						<div class="input-group input-group-lg">
+							<span class="input-group-addon" id="basic-addon1">Mozillians 網站ID：</span>
+							<input type="text" class="form-control" placeholder="（選填）" aria-describedby="basic-addon1">
+						</div>
+						<div class="input-group input-group-lg">
+							<span class="input-group-addon" id="basic-addon1">Email：</span>
+							<input type="text" class="form-control" placeholder="將用來連接Gravatar（選填）" aria-describedby="basic-addon1">
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary btn-wide center">提交</button>
+				</form>
+				<!-- 打開更新修改選單（Demo用） -->
+				<div class="row">
+					<button id="append" class="btn btn-primary center" data-append="#profile-data">打開修改資料選單（Demo用）</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-  <script src="js/global.js"></script>
-  <script src="js/flat-ui.min.js"></script>
+	<script src="js/global.js"></script>
+	<script src="js/flat-ui.min.js"></script>
 </body>
 
 </html>
