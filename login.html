@@ -8,48 +8,61 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta name="viewport" content="width=device-width">
 	<title>簽到/註冊 | 摩茲工寮即時狀態簽到系統</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/flat-ui.min.css">
+	<link rel="stylesheet" href="semantic/dist/semantic.min.css">
 	<link rel="stylesheet" href="css/custom.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 
 <body>
-	<div class="container">
+	<div class="ui container text-center raised segment">
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<h1 class="text-center title">簽到/註冊</h1>
-			</div>
+			<h1 class="title"><i class="sign in icon"></i>簽到/註冊</h1>
 		</div>
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <!-- 簽到/註冊表單 -->
-                <form class="login-form text-center" action="#">
-					<div class="input-group input-group-lg">
-						<span class="input-group-addon" id="basic-addon1">User ID：</span>
-						<input type="text" class="form-control" placeholder="請填入欲簽到/註冊的ID" aria-describedby="basic-addon1" required="required">
+		<div class="ui raised secondary segment">
+			<div class="row">
+				<!-- 簽到/註冊表單 -->
+				<form class="text-center gapped" action="#">
+					<div class="ui labeled input">
+						<div class="ui label">User ID</div>
+						<input placeholder="填入欲簽到/註冊的ID" type="text">
+						<div class="ui corner label">
+							<i class="asterisk icon"></i>
+						</div>
 					</div>
-                    <!-- 註冊表單 -->
+					<!-- 註冊表單 -->
 					<div id="register">
-						<div class="alert alert-warning" role="alert">您似乎還沒註冊呢！用幾秒鐘填寫以下資料吧！</div>
-						<div class="input-group input-group-lg">
-							<span class="input-group-addon" id="basic-addon1">暱稱：</span>
-							<input type="text" class="form-control" placeholder="將公開顯示（必填）" aria-describedby="basic-addon1">
+						<div class="ui floating compact message">
+							<div class="content">
+								<p><i class="warning circle icon"></i>Oops，您似乎還沒註冊呢！用幾秒鐘填寫以下資料吧！</p>
+							</div>
 						</div>
-						<div class="input-group input-group-lg">
-							<span class="input-group-addon" id="basic-addon1">Mozillians 網站ID：</span>
-							<input type="text" class="form-control" placeholder="（選填）" aria-describedby="basic-addon1">
+						</br>
+						<div class="ui labeled input">
+							<div class="ui label">暱稱</div>
+							<input placeholder="將會公開顯示" type="text">
+							<div class="ui corner label">
+								<i class="asterisk icon"></i>
+							</div>
 						</div>
-                        <div class="input-group input-group-lg">
-							<span class="input-group-addon" id="basic-addon1">Email：</span>
-							<input type="text" class="form-control" placeholder="將用來連接Gravatar（選填）" aria-describedby="basic-addon1">
+						</br>
+						<div class="ui labeled input">
+							<div class="ui label">Mozillians 網站ID</div>
+							<input placeholder="將於即時資訊頁提供連接" type="text">
+						</div>
+						</br>
+						<div class="ui labeled input">
+							<div class="ui label">Email</div>
+							<input placeholder="將用來連接Gravatar" type="text">
 						</div>
 					</div>
-					<button type="submit" class="btn btn-primary btn-wide center">提交</button>
+					</br>
+					<div>
+						<button type="submit" class="ui labeled icon green button"><i class="sign in icon"></i>提交</button>
+					</div>
 				</form>
 				<!-- 打開註冊選單（Demo用） -->
 				<div class="row">
-					<button id="append" class="btn btn-primary center" data-append="#register">打開註冊選單（Demo用）</button>
+					<button id="append" data-append="#register">打開註冊選單（Demo用）</button>
 				</div>
 			</div>
 		</div>
