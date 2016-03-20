@@ -16,43 +16,58 @@
 <body>
 	<div class="ui container text-center raised segment">
 		<div class="row">
-				<h1 class="title">帳號設定</h1>
+			<h1 class="title">帳號設定</h1>
 		</div>
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<form class="login-form text-center" action="#">
-					<div class="input-group input-group-lg">
-						<span class="input-group-addon" id="basic-addon1">User ID：</span>
-						<input type="text" class="form-control" placeholder="請填入欲設定的ID" aria-describedby="basic-addon1" required="required">
+		<div class="ui raised secondary segment">
+			<div class="row">
+				<form class="text-center gapped" action="#">
+					<div class="ui labeled input">
+						<div class="ui label">User ID</div>
+						<input placeholder="填入欲修改的ID" type="text">
+						<div class="ui corner label">
+							<i class="asterisk icon"></i>
+						</div>
 					</div>
 					<div id="profile-data">
-						<div class="alert alert-warning" role="alert">以下是您的帳號資料</div>
-						<div class="input-group input-group-lg">
-							<span class="input-group-addon" id="basic-addon1">暱稱：</span>
-							<input type="text" class="form-control" placeholder="將公開顯示（必填）" aria-describedby="basic-addon1">
+						<div class="ui floating compact message">
+							<div class="content">
+								<p><i class="warning circle icon"></i>以下是您的帳號資料</p>
+							</div>
 						</div>
-						<div class="input-group input-group-lg">
-							<span class="input-group-addon" id="basic-addon1">Mozillians 網站ID：</span>
-							<input type="text" class="form-control" placeholder="（選填）" aria-describedby="basic-addon1">
+						</br>
+						<div class="ui labeled input">
+							<div class="ui label">暱稱</div>
+							<input placeholder="將會公開顯示" type="text">
+							<div class="ui corner label">
+								<i class="asterisk icon"></i>
+							</div>
 						</div>
-						<div class="input-group input-group-lg">
-							<span class="input-group-addon" id="basic-addon1">Email：</span>
-							<input type="text" class="form-control" placeholder="將用來連接Gravatar（選填）" aria-describedby="basic-addon1">
+						</br>
+						<div class="ui labeled input">
+							<div class="ui label">Mozillians 網站ID</div>
+							<input placeholder="將於即時資訊頁提供連接" type="text">
+						</div>
+						</br>
+						<div class="ui labeled input">
+							<div class="ui label">Email</div>
+							<input placeholder="將用來連接Gravatar" type="text">
 						</div>
 					</div>
-					<button type="submit" class="btn btn-primary btn-wide center">提交</button>
-				</form>
-				<!-- 打開更新修改選單（Demo用） -->
-				<div class="row">
-					<button id="append" class="btn btn-primary center" data-append="#profile-data">打開修改資料選單（Demo用）</button>
-				</div>
+					</br>
+					<button type="submit" class="ui labeled icon green button"><i class="write icon"></i>提交</button>
+			</div>
+			</form>
+			<!-- 打開更新修改選單（Demo用） -->
+			<div class="row">
+				<button id="append" data-append="#profile-data">打開修改資料選單（Demo用）</button>
 			</div>
 		</div>
+	</div>
+	</div>
 	</div>
 
 	<script src="js/global.js"></script>
 	<script src="js/api.js"></script>
-	<script src="js/flat-ui.min.js"></script>
 </body>
 
 </html>
